@@ -22,6 +22,10 @@ nav li{
     vertical-align: middle;
     height:39px;
 }
+
+nav li:not(:last-child){
+    border-right: 1px solid #363636;
+}
 nav li:hover {
     background-color: rgba(0, 0, 0, 0.466);
 }
@@ -40,16 +44,13 @@ nav li:last-of-type:hover {
 nav li a{
     height: 35px;
 }
-li a > div{
-    background-image: url("/images/Apple-Logo.png");
-    background-size: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 80px;
-    height: 35px;
-    margin-top: -12px;
 
+.apple-logo a img {
+    height: 20px;
+    padding: 10px;
+    width: 20px;
 }
+
 nav ul {
     list-style-type: none;
     overflow: hidden;
@@ -101,7 +102,7 @@ nav input:focus {
     width: 120px;
 }
 
-nav span {
+/* nav span {
     display: inline-block;
     float: left;
     width: 1px;
@@ -109,7 +110,7 @@ nav span {
     background-color:#363636;
     margin: 0px;
     padding: 0;
-}
+} */
 
 /* TOP PART OF CONTENT*/
 .top {
@@ -171,9 +172,26 @@ nav span {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 200px;
+    width: 1441px
 }
 
-.bottom a img {
+.bottomimg1 {
+    background-image: url("/images/img1.jpg")
+}
+
+.bottomimg2 {
+    background-image: url("/images/img2.jpg")
+}
+
+.bottomimg3 {
+    background-image: url("/images/img3.jpg")
+}
+
+.bottomimg4 {
+    background-image: url("/images/img4.jpg")
+}
+
+.bottomimg {
     border: 1.5px solid white;
 }
 
